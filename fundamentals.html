@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fundamental principles of gene editing: DNA structure, repair mechanisms, and the evolution of genome editing technologies.">
+  <title>Gene Editing Fundamentals | CRISPR Academic Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header always-visible">
+    <div class="header-container">
+      <a href="index.html" class="home-button" aria-label="Home"></a>
+      <a href="index.html" class="logo">
+        <span class="logo-title-main">CRISPR</span><span class="logo-title-separator">: </span><span class="logo-title-subtitle">From Genome Editing to Personalized Therapeutics</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html" class="active">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="references.html">References</a>
+      </nav>
+      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="types.html">Types of CRISPR</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="future.html">Future</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1>Gene Editing Fundamentals</h1>
+
+    <section class="content-section">
+      <h2>1. DNA Structure and Function</h2>
+      
+      <h3>The Central Dogma of Molecular Biology</h3>
+      
+      <h3>DNA Double Helix</h3>
+      
+      <h3>Genes and Genomic Organization</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>2. DNA Damage and Repair Mechanisms</h2>
+      
+      <h3>Major DNA Repair Pathways</h3>
+      
+      <h3>Double-Strand Breaks as Gene Editing Foundations</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>3. Evolution of Gene-Editing Technologies</h2>
+      
+      <h3>First Generation: Zinc Finger Nucleases (ZFNs)</h3>
+      
+      <h3>Second Generation: Transcription Activator-Like Effector Nucleases (TALENs)</h3>
+      
+      <h3>Third Generation: CRISPR-Cas Systems</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>4. Principles of Targeted Genome Editing</h2>
+      
+      <h3>Key Requirements for Successful Gene Editing</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>5. Applications Framework</h2>
+      
+      <h3>Types of Genetic Modifications</h3>
+      
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Modification Type</th>
+              <th>Mechanism</th>
+              <th>Applications</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Gene Knockout</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Gene Correction</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Gene Insertion</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Gene Replacement</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Base Editing</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Prime Editing</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Summary</h2>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About This Project</h4>
+          <p>This website will be periodically updated to reflect new advances in CRISPR technology and emerging case studies in personalized therapeutics.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Academic Project for Educational Purposes.</p>
+        <p>Developed by Alankriti Chandola</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuToggle.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

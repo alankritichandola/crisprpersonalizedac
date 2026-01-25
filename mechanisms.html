@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Molecular mechanisms of CRISPR-Cas systems: target recognition, DNA cleavage, and repair pathways.">
+  <title>CRISPR Mechanisms | CRISPR Academic Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header always-visible">
+    <div class="header-container">
+      <a href="index.html" class="home-button" aria-label="Home"></a>
+      <a href="index.html" class="logo">
+        <span class="logo-title-main">CRISPR</span><span class="logo-title-separator">: </span><span class="logo-title-subtitle">From Genome Editing to Personalized Therapeutics</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html" class="active">Mechanisms</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="references.html">References</a>
+      </nav>
+      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="types.html">Types of CRISPR</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="future.html">Future</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1>CRISPR-Cas9 Molecular Mechanisms</h1>
+
+    <section class="content-section">
+      <h2>1. Components of the CRISPR-Cas9 System</h2>
+      
+      <h3>Cas9 Protein</h3>
+      
+      <h3>Guide RNA (gRNA)</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>2. Mechanism of Target Recognition and Cleavage</h2>
+      
+      <h3>Step 1: PAM Recognition and Scanning</h3>
+      
+      <h3>Step 2: RNA-DNA Hybridization (R-loop Formation)</h3>
+      
+      <h3>Step 3: Conformational Activation</h3>
+      
+      <h3>Step 4: DNA Cleavage</h3>
+      
+      <h3>Step 5: Product Release</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>3. Cellular DNA Repair and Editing Outcomes</h2>
+      
+      <h3>Non-Homologous End Joining (NHEJ)</h3>
+      
+      <h3>Homology-Directed Repair (HDR)</h3>
+      
+      <h3>Enhancing HDR Efficiency</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>4. Factors Affecting CRISPR-Cas9 Efficiency and Specificity</h2>
+      
+      <h3>On-Target Efficiency</h3>
+      
+      <h3>Off-Target Activity</h3>
+      
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Strategy</th>
+              <th>Mechanism</th>
+              <th>Advantage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>High-Fidelity Cas9 Variants</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Truncated gRNAs</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Cas9 Nickases (Paired)</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Ribonucleoprotein Delivery</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Chemical Modifications</strong></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>5. Advanced CRISPR Mechanisms</h2>
+      
+      <h3>Base Editing</h3>
+      
+      <h3>Prime Editing</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>Summary</h2>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About This Project</h4>
+          <p>This website will be periodically updated to reflect new advances in CRISPR technology and emerging case studies in personalized therapeutics.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Academic Project for Educational Purposes.</p>
+        <p>Developed by Alankriti Chandola</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuToggle.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

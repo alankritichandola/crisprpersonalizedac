@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CRISPR personalized therapeutics: patient-specific gene editing for individualized treatment of genetic diseases, cancer, and inherited conditions.">
+  <title>Personalized Therapeutics | CRISPR Academic Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header always-visible">
+    <div class="header-container">
+      <a href="index.html" class="home-button" aria-label="Home"></a>
+      <a href="index.html" class="logo">
+        <span class="logo-title-main">CRISPR</span><span class="logo-title-separator">: </span><span class="logo-title-subtitle">From Genome Editing to Personalized Therapeutics</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="applications.html" class="active">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="references.html">References</a>
+      </nav>
+      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="types.html">Types of CRISPR</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="future.html">Future</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1>CRISPR in Personalized Therapeutics and Medical Applications</h1>
+
+    <section class="content-section">
+      <h2>Personalized Therapeutics Framework</h2>
+      
+      <h3>Three Pillars of Personalized CRISPR Medicine</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>1. Personalized Treatment of Monogenic Diseases</h2>
+      
+      <h3>Sickle Cell Disease (SCD) and β-Thalassemia</h3>
+      
+      <h3>Duchenne Muscular Dystrophy (DMD)</h3>
+      
+      <h3>Leber Congenital Amaurosis 10 (LCA10)</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>2. Cancer Immunotherapy</h2>
+      
+      <h3>CAR-T Cell Engineering</h3>
+      
+      <h3>Allogeneic "Off-the-Shelf" CAR-T Cells</h3>
+      
+      <h3>Direct Tumor Editing</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>3. Infectious Disease Applications</h2>
+      
+      <h3>HIV/AIDS Treatment</h3>
+      
+      <h3>Hepatitis B Virus (HBV)</h3>
+      
+      <h3>Herpes Simplex Virus (HSV)</h3>
+      
+      <h3>Antimicrobial Applications</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>4. Regenerative Medicine and Organ Transplantation</h2>
+      
+      <h3>Induced Pluripotent Stem Cells (iPSCs)</h3>
+      
+      <h3>Xenotransplantation</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>5. Agricultural Applications</h2>
+      
+      <h3>Crop Improvement</h3>
+      
+      <h3>Notable Crop Developments</h3>
+      
+      <h3>Livestock Engineering</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>6. Industrial Biotechnology</h2>
+      
+      <h3>Microbial Engineering</h3>
+      
+      <h3>Metabolic Engineering</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>7. Diagnostics and Detection</h2>
+      
+      <h3>CRISPR-Based Diagnostic Platforms</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>8. Emerging and Future Applications</h2>
+    </section>
+
+    <section class="content-section">
+      <h2>Summary</h2>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About This Project</h4>
+          <p>This website will be periodically updated to reflect new advances in CRISPR technology and emerging case studies in personalized therapeutics.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Academic Project for Educational Purposes.</p>
+        <p>Developed by Alankriti Chandola</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuToggle.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About the author and this academic project on CRISPR gene editing technology.">
+  <title>About the Author | CRISPR Academic Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header always-visible">
+    <div class="header-container">
+      <a href="index.html" class="home-button" aria-label="Home"></a>
+      <a href="index.html" class="logo">
+        <span class="logo-title-main">CRISPR</span><span class="logo-title-separator">: </span><span class="logo-title-subtitle">From Genome Editing to Personalized Therapeutics</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="references.html">References</a>
+      </nav>
+      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="history.html">History</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="types.html">Types of CRISPR</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="future.html">Future</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1>About the Author</h1>
+    
+    <section class="content-section">
+      <h2>Project Information</h2>
+      
+      <div class="info-box">
+        <h4>Academic Project Details</h4>
+        <ul>
+          <li><strong>Project Title:</strong> CRISPR: From Genome Editing to Personalized Therapeutics</li>
+          <li><strong>Developer:</strong> Alankriti Chandola</li>
+          <li><strong>Type:</strong> Classroom Assignment / Academic Website</li>
+          <li><strong>Field:</strong> Biosciences / Biotechnology / Molecular Biology</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>About the Developer</h2>
+      
+      <h3>Academic Interests</h3>
+      <ul>
+        <li>Gene Editing Technologies and CRISPR Systems</li>
+        <li>Personalized Medicine and Precision Therapeutics</li>
+        <li>Molecular Biology and Genetics</li>
+        <li>Biotechnology Applications in Healthcare</li>
+        <li>Animal Cell Culture</li>
+        <li>Bioethics and Responsible Innovation</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Project Purpose</h2>
+    </section>
+
+    <section class="content-section">
+      <h2>Project Goals</h2>
+      
+      <h3>Primary Educational Goals</h3>
+      
+      <h3>Long-term Vision</h3>
+      <p>This website will be periodically updated to reflect new advances in CRISPR technology and emerging case studies in personalized therapeutics.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Scope and Limitations</h2>
+      
+      <h3>What This Website Provides</h3>
+      
+      <h3>What This Website Does Not Provide</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>Acknowledgments</h2>
+    </section>
+
+    <section class="content-section">
+      <h2>Feedback and Updates</h2>
+      
+      <h3>Commitment to Accuracy</h3>
+    </section>
+
+    <section class="content-section">
+      <h2>Educational Use</h2>
+    </section>
+
+    <section class="content-section">
+      <h2>Looking Forward</h2>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About This Project</h4>
+          <p>This website will be periodically updated to reflect new advances in CRISPR technology and emerging case studies in personalized therapeutics.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fundamentals.html">Fundamentals</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Academic Project for Educational Purposes.</p>
+        <p>Developed by Alankriti Chandola</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuToggle.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
