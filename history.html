@@ -16,27 +16,24 @@
       </a>
       <nav class="nav-desktop">
         <a href="index.html">Home</a>
-        <a href="fundamentals.html">Fundamentals</a>
         <a href="history.html" class="active">History</a>
-        <a href="mechanisms.html">Mechanisms</a>
-        <a href="applications.html">Therapeutics</a>
-        <a href="case-studies.html">Cases</a>
-        <a href="ethics.html">Ethics</a>
-        <a href="references.html">References</a>
-      </nav>
-      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
-      <nav class="nav-mobile" id="mobileMenu">
-        <a href="index.html">Home</a>
         <a href="fundamentals.html">Fundamentals</a>
-        <a href="history.html">History</a>
         <a href="mechanisms.html">Mechanisms</a>
-        <a href="types.html">Types of CRISPR</a>
         <a href="applications.html">Therapeutics</a>
         <a href="case-studies.html">Cases</a>
         <a href="ethics.html">Ethics</a>
         <a href="future.html">Future</a>
-        <a href="references.html">References</a>
-        <a href="about.html">About</a>
+      </nav>
+      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="future.html">Future</a>
       </nav>
     </div>
   </header>
@@ -44,52 +41,86 @@
   <main class="main-content">
     <h1>History of CRISPR Discovery</h1>
 
+    <figure class="hover-figure">
+      <img src="images/history-timeline.png" alt="Timeline of CRISPR discovery">
+      <div class="ref-number"><a href="references.html#ref2" class="citation">[2]</a></div>
+      <figcaption>The discovery of CRISPR started with noticing unusual repeated DNA sequences in bacteria. Over the following thirty years, scientists found that these repeats are part of a bacterial immune system against viruses. The major breakthrough happened in 2012 when CRISPR-Cas9 was adapted into a versatile genome-editing technology, sparking quick advances and clinical applications.</figcaption>
+    </figure>
+
     <section class="content-section">
       <h2>1. Initial Discovery (1987-2000)</h2>
       
       <h3>1987: First Observation of Unusual DNA Sequences</h3>
+      <p>The initial hint of what would eventually be known as CRISPR emerged in 1987 when Yoshizumi Ishino and his team sequenced a section of the Escherichia coli genome. They observed a series of highly unusual repetitive DNA sequences located downstream of the iap gene. At that point, these repeats had no understood function and were seen as a genetic anomaly rather than part of an immune defence system.</p>
+      <p>Today, this finding is acknowledged as the first recorded observation of a CRISPR locus, although its significance was only recognised much later. <a href="references.html#ref7" class="citation">[7]</a></p>
       
       <h3>1990s: Accumulating Evidence</h3>
+      <p>Throughout the 1990s, many microbial genomes revealed similar repeat–spacer patterns. A significant breakthrough occurred when Mojica and his team discovered comparable repeated sequences in the archaeon Haloferax mediterranei in 1993. As genome sequencing advanced, scientists detected these repeat arrays in a variety of bacteria and archaea. Nonetheless, their biological role was still unclear, and different names were used for them, leading to confusion. Despite this, the frequent conservation of these sequences implied they played a crucial role in evolution. <a href="references.html#ref7" class="citation">[7]</a></p>
       
       <h3>2000: Recognition as a Distinct Genetic Element</h3>
+      <p>By the late 1990s and early 2000s, it became clear through comparative genomics that these repeat–spacer structures were not random. Researchers started to identify them as a unique and conserved genetic element present in many prokaryotic organisms. This expanding body of evidence laid the groundwork for official classification and further investigation of the system's function. <a href="references.html#ref7" class="citation">[7]</a></p>
     </section>
 
     <section class="content-section">
       <h2>2. Characterization and Naming (2002-2007)</h2>
       
       <h3>2002: CRISPR Nomenclature Established</h3>
+      <p>A significant milestone took place in 2002 when Jansen and colleagues introduced the term: Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR). This standardized nomenclature eliminated previous confusion caused by various competing terms and facilitated the unification of research efforts. Simultaneously, genes consistently located near these arrays were designated as Cas (CRISPR-associated) genes, indicating that CRISPR was likely part of a broader functional system. <a href="references.html#ref7" class="citation">[7]</a></p>
       
       <h3>2005: Breakthrough Discovery - Spacer Origins</h3>
+      <p>In 2005, researchers made a groundbreaking discovery: the spacer sequences between CRISPR repeats matched DNA from bacteriophages and plasmids. This indicated that CRISPR arrays serve as a genetic archive of previous infections, giving microbial cells a memory of invading viruses. This was the first compelling evidence that CRISPR acts as a defense system rather than merely a structural part of the genome. <a href="references.html#ref7" class="citation">[7]</a></p>
       
       <h3>2006-2007: Adaptive Immunity Hypothesis</h3>
+      <p>Between 2006 and 2007, CRISPR was officially proposed as an adaptive immune system in prokaryotes. Experimental evidence confirmed that CRISPR defends bacteria against viral reinfection through RNA-guided targeting. This finding turned CRISPR from an obscure DNA repeat into a key immune mechanism in microbial biology. <a href="references.html#ref7" class="citation">[7]</a></p>
     </section>
 
     <section class="content-section">
       <h2>3. Molecular Mechanism Elucidation (2008-2011)</h2>
       
       <h3>2008: Three Stages of CRISPR Immunity</h3>
+      <p>By 2008, the CRISPR immune response was recognised to occur in three interconnected stages:</p>
+      <ol>
+        <li>Adaptation — acquisition of new viral DNA fragments as spacers</li>
+        <li>Expression — production of CRISPR RNA molecules</li>
+        <li>Interference — detection and destruction of invading DNA</li>
+      </ol>
+      <p>This model positioned CRISPR as a customizable, RNA-guided defense mechanism. <a href="references.html#ref7" class="citation">[7]</a></p>
       
       <h3>2010: Cas9 as DNA Endonuclease</h3>
+      <p>A major breakthrough happened when Cas9 was identified as the enzyme that cuts foreign DNA. It was demonstrated to act as an RNA-guided endonuclease capable of making precise double-stranded breaks. This finding later facilitated the transformation of CRISPR into a genome-editing tool. <a href="references.html#ref8" class="citation">[8]</a></p>
       
       <h3>2011: Dual RNA Structure</h3>
+      <p>In 2011, researchers found that Cas9 needs two RNA molecules: crRNA (for target recognition) and tracrRNA (for structural activation). This discovery led to the creation of a simplified single-guide RNA (sgRNA), marking a significant advancement in engineering CRISPR for biotechnology. <a href="references.html#ref8" class="citation">[8]</a></p>
     </section>
 
     <section class="content-section">
       <h2>4. Revolutionary Transition: From Immune System to Gene-Editing Tool (2012-2013)</h2>
       
       <h3>2012: Programmable DNA Targeting</h3>
+      <p>In 2012, CRISPR-Cas9 was successfully reconfigured to target any desired DNA sequence. Researchers showed that by designing a guide RNA, Cas9 could be guided to make precise cuts at specific locations in the genome. This marked the point when CRISPR became a versatile genome-editing platform. <a href="references.html#ref8" class="citation">[8]</a></p>
       
       <h3>2013: Application in Mammalian Cells</h3>
+      <p>By 2013, CRISPR-Cas9 systems had been adapted for mammalian use, enabling precise gene editing in human and animal cells with exceptional efficiency, simplicity, and cost-effectiveness. This milestone sparked the swift growth of CRISPR applications in medicine, agriculture, and biotechnology. <a href="references.html#ref8" class="citation">[8]</a></p>
     </section>
 
     <section class="content-section">
       <h2>5. Rapid Expansion and Innovation (2014-Present)</h2>
       
       <h3>2014-2015: Expanding the CRISPR Toolbox</h3>
+      <p>Following its success, CRISPR quickly diversified as researchers developed various advancements:</p>
+      <ul>
+        <li>Cas variants with different PAM requirements</li>
+        <li>Catalytically inactive Cas proteins (dCas9) for gene regulation</li>
+        <li>Enhanced specificity tools</li>
+      </ul>
+      <p>These developments expanded CRISPR's uses beyond simply cutting DNA. <a href="references.html#ref9" class="citation">[9]</a></p>
       
       <h3>2016-2017: Base Editing Revolution</h3>
+      <p>In 2016-2017, base editing emerged as a significant breakthrough. Unlike traditional CRISPR, base editors can change one nucleotide directly into another without causing double-strand breaks, which minimises unintended mutations.</p>
+      <p>This significantly improved the accuracy of therapeutic genome editing. <a href="references.html#ref8" class="citation">[8]</a></p>
       
       <h3>2019: Prime Editing</h3>
+      <p>Prime editing, introduced in 2019, is a next-generation system that enables precise insertions, deletions, and substitutions with fewer errors. It is regarded as one of the most versatile CRISPR-based editing tools. <a href="references.html#ref8" class="citation">[8]</a></p>
       
       <h3>2020: Nobel Prize Recognition</h3>
       
@@ -100,14 +131,32 @@
       </figure>
       
       <h3>2020-Present: Clinical Translation</h3>
+      <p>Today, CRISPR is increasingly being integrated into clinical medicine, with several trials ongoing for conditions such as:</p>
+      <ul>
+        <li>Genetic blood disorders</li>
+        <li>Viral infections</li>
+        <li>Cancer treatments</li>
+        <li>Customised gene correction</li>
+      </ul>
+      <p>Nonetheless, obstacles like delivery effectiveness, immune reactions, and off-target effects still need to be addressed. <a href="references.html#ref9" class="citation">[9]</a></p>
     </section>
 
     <section class="content-section">
       <h2>6. Impact and Significance</h2>
+      <p>CRISPR has revolutionised modern biology by allowing precise, cost-effective genome editing. Originally a bacterial immune mechanism, it now serves as a transformative platform impacting:</p>
+      <ul>
+        <li>Human gene therapy</li>
+        <li>Oncology</li>
+        <li>Synthetic biology</li>
+        <li>Agricultural biotechnology</li>
+      </ul>
+      <p>Its influence keeps growing as new Cas enzymes and editing techniques are developed. <a href="references.html#ref8" class="citation">[8]</a></p>
     </section>
 
     <section class="content-section">
       <h2>Summary</h2>
+      <p>CRISPR's history spans more than thirty years, evolving from obscure bacterial DNA repeats to one of the most influential tools in genome editing. Its development showcases how discoveries in microbiology can revolutionise medicine and biotechnology.</p>
+      <p>Moving forward, CRISPR's potential depends on safer delivery methods, greater accuracy, and responsible global oversight. <a href="references.html#ref8" class="citation">[8]</a></p>
     </section>
   </main>
 
@@ -123,7 +172,6 @@
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="about.html">About</a></li>
           </ul>
         </div>
       </div>

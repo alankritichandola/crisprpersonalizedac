@@ -16,27 +16,24 @@
       </a>
       <nav class="nav-desktop">
         <a href="index.html">Home</a>
+        <a href="history.html">History</a>
         <a href="fundamentals.html" class="active">Fundamentals</a>
-        <a href="history.html">History</a>
         <a href="mechanisms.html">Mechanisms</a>
-        <a href="applications.html">Therapeutics</a>
-        <a href="case-studies.html">Cases</a>
-        <a href="ethics.html">Ethics</a>
-        <a href="references.html">References</a>
-      </nav>
-      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
-      <nav class="nav-mobile" id="mobileMenu">
-        <a href="index.html">Home</a>
-        <a href="fundamentals.html">Fundamentals</a>
-        <a href="history.html">History</a>
-        <a href="mechanisms.html">Mechanisms</a>
-        <a href="types.html">Types of CRISPR</a>
         <a href="applications.html">Therapeutics</a>
         <a href="case-studies.html">Cases</a>
         <a href="ethics.html">Ethics</a>
         <a href="future.html">Future</a>
-        <a href="references.html">References</a>
-        <a href="about.html">About</a>
+      </nav>
+      <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="mechanisms.html">Mechanisms</a>
+        <a href="applications.html">Therapeutics</a>
+        <a href="case-studies.html">Cases</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="future.html">Future</a>
       </nav>
     </div>
   </header>
@@ -48,40 +45,82 @@
       <h2>1. DNA Structure and Function</h2>
       
       <h3>The Central Dogma of Molecular Biology</h3>
+      <p>DNA serves as the primary genetic material in most organisms. It stores genetic information in its nucleotide sequence, which is expressed via the central dogma: DNA is transcribed into RNA and then translated into proteins. Because proteins regulate cellular structure and functions, alterations in DNA sequences can directly influence phenotype and disease. <a href="references.html#ref4" class="citation">[4]</a></p>
       
       <h3>DNA Double Helix</h3>
+      <p>DNA is structured as a double helix made up of complementary base pairs (A-T and G-C). Maintaining this structure's stability is crucial for precise replication and inheritance. Genome editing technologies operate by creating specific breaks or changes in this DNA helix to modify gene function. Usually, targeted genome editing involves causing a DNA double-strand break (DSB), which then triggers the cell's repair mechanisms. <a href="references.html#ref5" class="citation">[5]</a></p>
       
       <h3>Genes and Genomic Organization</h3>
+      <p>Genes are functional DNA units that encode either RNA or proteins. The genome includes both coding sequences and regulatory regions responsible for controlling gene expression in time and space. Genome editing allows scientists to target specific genetic loci to investigate gene regulation, create disease models, and develop therapy strategies. <a href="references.html#ref4" class="citation">[4]</a></p>
     </section>
 
     <section class="content-section">
       <h2>2. DNA Damage and Repair Mechanisms</h2>
       
       <h3>Major DNA Repair Pathways</h3>
+      <p>Cells possess inherent DNA repair systems that maintain genetic stability. When DNA is damaged, these mechanisms repair mutations or reassemble broken strands. The two main pathways involved in gene editing are:</p>
+      <ul>
+        <li>Non-Homologous End Joining (NHEJ)</li>
+        <li>Homology-Directed Repair (HDR)</li>
+      </ul>
+      <p>These pathways determine the final outcomes of genome editing. <a href="references.html#ref5" class="citation">[5]</a></p>
+      
+      <figure class="hover-figure">
+        <img src="images/cas9-dna-repair.png" alt="Cas9 and DNA repair pathways">
+        <div class="ref-number"><a href="references.html#ref6" class="citation">[6]</a></div>
+        <figcaption>Figure: Structural organization of the Cas9 nuclease. Cas9 is a multi-domain enzyme consisting of a recognition (REC) lobe and a nuclease (NUC) lobe. The two catalytic domains, HNH and RuvC, cleave opposite DNA strands, enabling Cas9 to create precise double-strand breaks. This structural arrangement accounts for Cas9's high efficiency as an RNA-guided genome editing tool.</figcaption>
+      </figure>
       
       <h3>Double-Strand Breaks as Gene Editing Foundations</h3>
+      <p>Modern genome editing tools operate by inducing a site-specific double-strand break (DSB) in DNA. After the break occurs, the cell tries to repair it through two main pathways: NHEJ, which frequently results in insertions or deletions (indels) that can disrupt genes, and HDR, which allows for accurate sequence correction when a donor template is supplied. Therefore, the cell's repair machinery plays a crucial role in determining the final editing outcome. <a href="references.html#ref5" class="citation">[5]</a></p>
     </section>
 
     <section class="content-section">
       <h2>3. Evolution of Gene-Editing Technologies</h2>
       
       <h3>First Generation: Zinc Finger Nucleases (ZFNs)</h3>
+      <p>ZFNs were among the earliest engineered nucleases utilised for genome editing. They consist of a DNA-binding zinc-finger domain coupled with the FokI nuclease cleavage domain. While effective, they demand complex protein engineering tailored to each target site. <a href="references.html#ref4" class="citation">[4]</a></p>
       
       <h3>Second Generation: Transcription Activator-Like Effector Nucleases (TALENs)</h3>
+      <p>Transcription Activator-Like Effector Nucleases (TALENs) enhanced targeting flexibility through repeat motifs that identify individual nucleotides. However, similar to ZFNs, TALENs still depend on protein customization for each DNA target. <a href="references.html#ref4" class="citation">[4]</a></p>
       
       <h3>Third Generation: CRISPR-Cas Systems</h3>
+      <p>CRISPR-Cas9 is a significant breakthrough because it uses RNA-guided targeting instead of protein-guided recognition. A programmable guide RNA directs the Cas9 nuclease to bind to a complementary DNA sequence, creating a double-strand break. Since only the guide RNA must be redesigned, CRISPR is faster, more cost-effective, and more scalable than previous platforms. <a href="references.html#ref4" class="citation">[4]</a></p>
+      
+      <figure class="hover-figure">
+        <img src="images/crispr-loci-structure.png" alt="Structural features of CRISPR loci">
+        <div class="ref-number"><a href="references.html#ref7" class="citation">[7]</a></div>
+        <figcaption>Figure: Structural features of CRISPR loci. CRISPR arrays are made up of short repeated DNA sequences interspersed with unique spacer sequences. These spacers originate from viral genomes, acting as a genetic record of previous infections. This system forms the foundation of bacterial adaptive immunity and was the inspiration for genome editing technology.</figcaption>
+      </figure>
     </section>
 
     <section class="content-section">
       <h2>4. Principles of Targeted Genome Editing</h2>
       
       <h3>Key Requirements for Successful Gene Editing</h3>
+      <p>Effective genome editing requires the coordinated action of several elements:</p>
+      <ul>
+        <li>A programmable nuclease like Cas9</li>
+        <li>A guide RNA that matches the target sequence</li>
+        <li>A PAM motif located next to the target</li>
+        <li>Managed repair processes (NHEJ vs HDR)</li>
+      </ul>
+      <p>CRISPR precision relies on both RNA–DNA matching and PAM recognition. <a href="references.html#ref4" class="citation">[4]</a></p>
     </section>
 
     <section class="content-section">
       <h2>5. Applications Framework</h2>
       
       <h3>Types of Genetic Modifications</h3>
+      <p>Genome editing can lead to various types of modifications:</p>
+      <ul>
+        <li>Gene knockout (loss of function)</li>
+        <li>Gene insertion (adding sequences)</li>
+        <li>Gene replacement (correcting mutations)</li>
+        <li>Base editing (single nucleotide conversion)</li>
+        <li>Prime editing (accurate sequence rewriting)</li>
+      </ul>
+      <p>These methods extend CRISPR's capabilities from merely cutting DNA to achieving more precise therapeutic applications. <a href="references.html#ref5" class="citation">[5]</a></p>
       
       <div class="table-wrapper">
         <table>
@@ -95,33 +134,28 @@
           <tbody>
             <tr>
               <td><strong>Gene Knockout</strong></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><strong>Gene Correction</strong></td>
-              <td></td>
-              <td></td>
+              <td>Indels via NHEJ repair</td>
+              <td>Functional genomics, cancer targets</td>
             </tr>
             <tr>
               <td><strong>Gene Insertion</strong></td>
-              <td></td>
-              <td></td>
+              <td>HDR-mediated donor integration</td>
+              <td>Gene therapy, transgenics</td>
             </tr>
             <tr>
               <td><strong>Gene Replacement</strong></td>
-              <td></td>
-              <td></td>
+              <td>Template-based HDR correction</td>
+              <td>Mutation repair (monogenic disease)</td>
             </tr>
             <tr>
               <td><strong>Base Editing</strong></td>
-              <td></td>
-              <td></td>
+              <td>No DSB, nucleotide conversion</td>
+              <td>Point mutation correction</td>
             </tr>
             <tr>
               <td><strong>Prime Editing</strong></td>
-              <td></td>
-              <td></td>
+              <td>Reverse transcriptase-guided rewrite</td>
+              <td>Precise editing without DSB</td>
             </tr>
           </tbody>
         </table>
@@ -130,6 +164,7 @@
 
     <section class="content-section">
       <h2>Summary</h2>
+      <p>Gene editing primarily involves targeted DNA modification with programmable nucleases. CRISPR-Cas9 has become the most versatile system because of its RNA-guided precision, dependence on natural DNA repair mechanisms, and widespread use in research and therapy development.</p>
     </section>
   </main>
 
@@ -145,7 +180,6 @@
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="about.html">About</a></li>
           </ul>
         </div>
       </div>

@@ -9,7 +9,7 @@
   <title>CRISPR: From Genome Editing to Personalized Therapeutics</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="homepage">
   <!-- Disclaimer Bar (Homepage Only, Non-Sticky) -->
   <div class="disclaimer-bar">This website is created solely for academic assignment purposes.</div>
 
@@ -23,35 +23,32 @@
       <!-- Desktop Navigation -->
       <nav class="nav-desktop">
         <a href="index.html" class="active">Home</a>
-        <a href="fundamentals.html">Fundamentals</a>
         <a href="history.html">History</a>
+        <a href="fundamentals.html">Fundamentals</a>
         <a href="mechanisms.html">Mechanisms</a>
         <a href="applications.html">Therapeutics</a>
         <a href="case-studies.html">Cases</a>
         <a href="ethics.html">Ethics</a>
-        <a href="references.html">References</a>
+        <a href="future.html">Future</a>
       </nav>
       
       <!-- Mobile Navigation Toggle -->
       <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
       <nav class="nav-mobile" id="mobileMenu">
         <a href="index.html">Home</a>
-        <a href="fundamentals.html">Fundamentals</a>
         <a href="history.html">History</a>
+        <a href="fundamentals.html">Fundamentals</a>
         <a href="mechanisms.html">Mechanisms</a>
-        <a href="types.html">Types of CRISPR</a>
         <a href="applications.html">Therapeutics</a>
         <a href="case-studies.html">Cases</a>
         <a href="ethics.html">Ethics</a>
         <a href="future.html">Future</a>
-        <a href="references.html">References</a>
-        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
   <!-- Full-Screen Landing Hero -->
-  <section class="hero-section">
+  <section class="snap-section hero-section">
     <div class="hero-content">
       <h1 class="hero-title">CRISPR</h1>
       <p class="hero-subtitle">From Genome Editing to Personalized Therapeutics</p>
@@ -61,48 +58,69 @@
     </div>
   </section>
 
+  <section class="snap-section video-section">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="images/no-logo-crispr.mp4" type="video/mp4">
+    </video>
+    <div class="scroll-indicator video-scroll-indicator">Scroll to continue ↓</div>
+  </section>
+
   <!-- Main Content -->
+  <section class="snap-section main-snap">
   <main class="main-content">
     
     <!-- Introduction Section -->
     <section class="content-section">
       <h2>Introduction</h2>
+      <p>CRISPR-Cas systems initially developed in bacteria as a means of defending against viruses. Researchers transformed this natural system into a versatile genome-editing technology, where a guide RNA leads the Cas enzyme to a targeted DNA sequence. <a href="references.html#ref1" class="citation">[1]</a></p>
     </section>
 
     <!-- Personalized Therapeutics Focus -->
     <section class="content-section">
       <h2>CRISPR in Personalized Therapeutics: The Core Focus</h2>
+      <p>CRISPR is particularly effective in personalized medicine because treatments can be tailored to a patient's specific mutation profile, enhancing precision and increasing the likelihood of a cure. <a href="references.html#ref2" class="citation">[2]</a></p>
       
       <h3>Why Personalized Gene Therapy?</h3>
-      
-      <h3>Personalized Medicine: A Paradigm Shift</h3>
+      <p>Personalized gene therapy marks a significant breakthrough by addressing the genetic root of diseases instead of merely alleviating symptoms. CRISPR-based treatments for blood disorders and inherited conditions are seen as revolutionary.</p>
+      <ul>
+        <li>Many diseases result from specific mutations</li>
+        <li>Conventional drugs only manage symptoms</li>
+        <li>Gene therapy seeks to correct the underlying cause</li>
+      </ul>
+      <p><a href="references.html#ref2" class="citation">[2]</a></p>
       
       <h3>From Genome Editing to Therapeutic Reality</h3>
+      <p>Editing DNA in a lab is one thing, but turning it into a treatment involves several steps: delivering it into cells, performing safety checks, avoiding off-target mutations, and undergoing clinical validation. When CRISPR creates a DNA break, cells repair it via pathways such as NHEJ or HDR. These repair processes influence whether the edit results in a disruption or correction. <a href="references.html#ref1" class="citation">[1]</a>, <a href="references.html#ref2" class="citation">[2]</a></p>
       
       <div class="card-grid">
         <div class="card">
           <h3>Patient-Specific Editing</h3>
+          <div class="card-description">
+            <p>Since each patient's genome is unique, CRISPR can be tailored with different guide RNAs. Patient-specific genome editing includes creating guide RNAs that precisely match the individual mutation, allowing for highly personalised therapy approaches. <a href="references.html#ref3" class="citation">[3]</a></p>
+          </div>
         </div>
         
         <div class="card">
           <h3>Autologous Cell Therapies</h3>
+          <div class="card-description">
+            <p>One of the safest current methods involves removing the patient's own stem cells, editing them outside the body (ex vivo), and reintroducing them. Ex vivo CRISPR therapy is promising because it allows cells to be tested prior to re-infusion, enhancing safety and minimising unintended effects. <a href="references.html#ref2" class="citation">[2]</a></p>
+          </div>
         </div>
         
         <div class="card">
           <h3>Precision Oncology</h3>
+          <div class="card-description">
+            <p>Cancer arises from mutations in oncogenes or tumor suppressor genes. CRISPR technology enables the modelling of cancer mutations, the knockout of cancer-related genes, and the engineering of immune cells. It pioneers new possibilities in oncology by allowing precise targeting of cancer-causing genes and supporting personalized treatments through tumor sequencing. <a href="references.html#ref3" class="citation">[3]</a></p>
+          </div>
         </div>
         
         <div class="card">
           <h3>Pharmacogenomic Editing</h3>
+          <div class="card-description">
+            <p>Pharmacogenomics refers to how genetic differences impact drug responses. Looking ahead, gene editing might allow us to alter genes that affect metabolism or drug toxicity. In the future, genome editing could play a role in personalising pharmacogenomics by changing genetic variants that influence how drugs work and their side effects. <a href="references.html#ref3" class="citation">[3]</a></p>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Problem Statement -->
-    <section class="content-section">
-      <h2>Why This Resource?</h2>
-      
-      <h3>Educational Challenge</h3>
     </section>
 
     <!-- Content Overview -->
@@ -123,11 +141,6 @@
         <div class="card">
           <h3>Molecular Mechanisms</h3>
           <a href="mechanisms.html">Explore →</a>
-        </div>
-        
-        <div class="card">
-          <h3>Types of CRISPR Systems</h3>
-          <a href="types.html">Explore →</a>
         </div>
         
         <div class="card">
@@ -164,6 +177,7 @@
     </section>
 
   </main>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -192,7 +206,6 @@
             <li><a href="ethics.html">Ethics & Regulations</a></li>
             <li><a href="future.html">Future Prospects</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="about.html">About the Author</a></li>
           </ul>
         </div>
       </div>

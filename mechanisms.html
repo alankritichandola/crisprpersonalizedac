@@ -16,27 +16,24 @@
       </a>
       <nav class="nav-desktop">
         <a href="index.html">Home</a>
-        <a href="fundamentals.html">Fundamentals</a>
         <a href="history.html">History</a>
+        <a href="fundamentals.html">Fundamentals</a>
         <a href="mechanisms.html" class="active">Mechanisms</a>
         <a href="applications.html">Therapeutics</a>
         <a href="case-studies.html">Cases</a>
         <a href="ethics.html">Ethics</a>
-        <a href="references.html">References</a>
+        <a href="future.html">Future</a>
       </nav>
       <button class="nav-mobile-toggle" id="mobileMenuToggle">Menu</button>
       <nav class="nav-mobile" id="mobileMenu">
         <a href="index.html">Home</a>
-        <a href="fundamentals.html">Fundamentals</a>
         <a href="history.html">History</a>
+        <a href="fundamentals.html">Fundamentals</a>
         <a href="mechanisms.html">Mechanisms</a>
-        <a href="types.html">Types of CRISPR</a>
         <a href="applications.html">Therapeutics</a>
         <a href="case-studies.html">Cases</a>
         <a href="ethics.html">Ethics</a>
         <a href="future.html">Future</a>
-        <a href="references.html">References</a>
-        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
@@ -48,40 +45,92 @@
       <h2>1. Components of the CRISPR-Cas9 System</h2>
       
       <h3>Cas9 Protein</h3>
+      <p>Cas9 is an RNA-guided endonuclease acting as the central molecular "scissor" in the CRISPR-Cas9 system. It features two main lobes: the recognition (REC) lobe, which binds and stabilizes the guide RNA–DNA hybrid, and the nuclease (NUC) lobe, containing catalytic domains for DNA cleavage. The nuclease activity relies on two conserved domains: the HNH domain, which cuts the DNA strand complementary to the guide RNA, and the RuvC domain, which cleaves the non-complementary strand. Mutations in either domain convert Cas9 into a nickase, and mutations in both produce an inactive form called dead Cas9 (dCas9), which can bind DNA but cannot cut. These structural details clarify how Cas9 enables programmable, strand-specific DNA editing. <a href="references.html#ref6" class="citation">[6]</a></p>
+      
+      <figure class="hover-figure">
+        <img src="images/cas9-structure.png" alt="Mechanism of CRISPR-Cas9 genome engineering">
+        <div class="ref-number"><a href="references.html#ref6" class="citation">[6]</a></div>
+        <figcaption>Figure: Mechanism of CRISPR-Cas9 genome engineering. CRISPR-Cas9 functions by employing a guide RNA (sgRNA) to direct the Cas9 nuclease to a particular DNA sequence. Cas9 then creates a double-strand break (DSB), which the cell repairs either via non-homologous end joining (NHEJ), causing gene disruptions, or through homology-directed repair (HDR), allowing for accurate gene correction or insertion.</figcaption>
+      </figure>
       
       <h3>Guide RNA (gRNA)</h3>
+      <p>The guide RNA (gRNA) ensures sequence specificity within the CRISPR-Cas9 system. In bacteria, this RNA naturally exists as two separate molecules:</p>
+      <ul>
+        <li>crRNA, which includes the targeting spacer sequence,</li>
+        <li>and tracrRNA, responsible for scaffolding Cas9 binding.</li>
+      </ul>
+      <p>In genome engineering, these two RNAs are combined into a single synthetic molecule called single-guide RNA (sgRNA).</p>
+      <p>The spacer region, approximately 20 nucleotides long, guides Cas9 to match specific genomic DNA sequences. A crucial element is the seed sequence, located near the PAM-proximal end, where mismatches significantly impair binding and cleavage. Therefore, designing effective guide RNAs is essential for achieving high efficiency and accuracy. <a href="references.html#ref6" class="citation">[6]</a></p>
     </section>
 
     <section class="content-section">
       <h2>2. Mechanism of Target Recognition and Cleavage</h2>
+      <p>CRISPR-Cas9 editing occurs via a multistep molecular process that includes target scanning, unwinding DNA, forming RNA-DNA hybrids, activating conformations, and cleaving.</p>
+      
+      <figure class="hover-figure">
+        <img src="images/cas9-pam-target-recognition.png" alt="DNA target recognition by Cas9 and PAM dependence">
+        <div class="ref-number"><a href="references.html#ref6" class="citation">[6]</a></div>
+        <figcaption>Figure: DNA target recognition by Cas9 and PAM dependence. Cas9 initially scans DNA for a short PAM motif before unwinding the target region. When the guide RNA matches the DNA sequence, an R-loop forms, activating cleavage. This PAM-dependent recognition step is crucial for ensuring accuracy and safety in genome editing applications.</figcaption>
+      </figure>
       
       <h3>Step 1: PAM Recognition and Scanning</h3>
+      <p>Cas9 does not bind DNA at random. Instead, it begins by looking for a short sequence motif next to the target, known as the Protospacer Adjacent Motif (PAM).</p>
+      <p>For the widely used Streptococcus pyogenes Cas9, the PAM is usually 5′-NGG-3′. Recognising the PAM initiates binding and enables Cas9 to examine nearby DNA for guide sequence matching. Without PAM, Cas9 stays inactive and quickly detaches. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <h3>Step 2: RNA-DNA Hybridization (R-loop Formation)</h3>
+      <p>After PAM binding, Cas9 causes local melting of the DNA duplex. The guide RNA then starts base pairing with the complementary DNA strand, creating an RNA-DNA hybrid known as an R-loop. This hybrid grows gradually from the PAM-proximal seed region outward. Forming a stable R-loop is crucial because incomplete pairing prevents cleavage and leads to target rejection. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <h3>Step 3: Conformational Activation</h3>
+      <p>Target binding alone does not cause cleavage. Cas9 experiences significant structural changes after guide RNA attachment and R-loop creation. A key step is the movement of the HNH nuclease domain, which shifts nearer to the cleavage site only if precise RNA-DNA pairing occurs. This conformational checkpoint is vital for ensuring accurate editing. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <h3>Step 4: DNA Cleavage</h3>
+      <p>Once activated, Cas9 cleaves both DNA strands about 3 base pairs upstream of the PAM, creating a blunt double-strand break.</p>
+      <ul>
+        <li>HNH domain cuts the target strand</li>
+        <li>RuvC domain cuts the non-target strand</li>
+      </ul>
+      <p>Cleavage is synchronised via allosteric communication between the two nuclease domains, ensuring cuts happen simultaneously. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <h3>Step 5: Product Release</h3>
+      <p>After cleavage, Cas9 typically stays strongly attached to the broken DNA ends. Releasing it needs cellular factors to displace it, so Cas9 often functions as a single-turnover enzyme in many situations. This affects the speed of editing inside living organisms. <a href="references.html#ref6" class="citation">[6]</a></p>
     </section>
 
     <section class="content-section">
       <h2>3. Cellular DNA Repair and Editing Outcomes</h2>
+      <p>Following Cas9-induced double-strand breaks, the results of genome editing are influenced by the host cell's DNA repair mechanisms.</p>
       
       <h3>Non-Homologous End Joining (NHEJ)</h3>
+      <p>NHEJ is the primary repair mechanism in most mammalian cells. It joins broken DNA ends without needing a template, often resulting in small insertions or deletions (indels). These indels commonly disrupt gene coding sequences, which makes NHEJ valuable for gene knockout applications. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <h3>Homology-Directed Repair (HDR)</h3>
+      <p>HDR is a high-precision repair process that employs a donor DNA template to accurately fix breaks. This allows for targeted sequence insertion, mutation correction, or therapeutic gene knock-ins. However, HDR primarily occurs in dividing cells, which limits its effectiveness in vivo. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <h3>Enhancing HDR Efficiency</h3>
+      <p>Strategies to enhance HDR involve:</p>
+      <ul>
+        <li>Supplying repair templates at high concentrations</li>
+        <li>Synchronizing cells in the S/G2 phase</li>
+        <li>Suppressing NHEJ components</li>
+        <li>Employing engineered Cas variants with improved kinetics</li>
+      </ul>
+      <p>Enhancing HDR is essential for advancing clinical gene correction therapies. <a href="references.html#ref6" class="citation">[6]</a></p>
     </section>
 
     <section class="content-section">
       <h2>4. Factors Affecting CRISPR-Cas9 Efficiency and Specificity</h2>
       
       <h3>On-Target Efficiency</h3>
+      <p>Efficiency depends on:</p>
+      <ul>
+        <li>Guide RNA sequence composition</li>
+        <li>Chromatin accessibility</li>
+        <li>Cas9 delivery method</li>
+        <li>PAM availability</li>
+      </ul>
+      <p>Using Cas9 orthologs with different PAM requirements can expand targeting range and enhance performance. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <h3>Off-Target Activity</h3>
+      <p>Cas9 can bind to off-target genomic sites with partial complementarity, particularly if mismatches are outside the seed region. Notably, DNA binding is more permissive than cleavage, so many off-target bindings do not result in cuts. Using high-fidelity Cas9 variants and truncated gRNAs can help minimise unintended edits. <a href="references.html#ref6" class="citation">[6]</a></p>
       
       <div class="table-wrapper">
         <table>
@@ -95,28 +144,28 @@
           <tbody>
             <tr>
               <td><strong>High-Fidelity Cas9 Variants</strong></td>
-              <td></td>
-              <td></td>
+              <td>Engineered Cas9 proteins, such as SpCas9-HF1 and eSpCas9, have mutations that reduce non-specific DNA binding. As a result, Cas9 needs a more precise match between guide RNA and DNA before it can cleave.</td>
+              <td>Significantly minimises off-target effects while ensuring high on-target efficiency, enhancing safety for therapeutic uses. <a href="references.html#ref6" class="citation">[6]</a></td>
             </tr>
             <tr>
               <td><strong>Truncated gRNAs</strong></td>
-              <td></td>
-              <td></td>
+              <td>Shorter guide RNAs, measuring 17–18 nucleotides instead of 20, decrease tolerance for mismatches. This enhances targeting accuracy and prevents Cas9 from binding to off-target sites with weak matches.</td>
+              <td>A straightforward approach that enhances specificity without modifying the Cas9 protein. <a href="references.html#ref6" class="citation">[6]</a></td>
             </tr>
             <tr>
               <td><strong>Cas9 Nickases (Paired)</strong></td>
-              <td></td>
-              <td></td>
+              <td>Nickase Cas9 is designed by disabling one nuclease domain (either HNH or RuvC), so it only cleaves a single DNA strand. When two nickases target nearby sites, they generate a double-strand break only if both guides bind accurately.</td>
+              <td>A significant decrease in off-target mutations occurs because two separate targeting events are necessary. <a href="references.html#ref6" class="citation">[6]</a></td>
             </tr>
             <tr>
               <td><strong>Ribonucleoprotein Delivery</strong></td>
-              <td></td>
-              <td></td>
+              <td>Rather than delivering Cas9 DNA or mRNA, the Cas9 protein is introduced directly as a pre-assembled Cas9-sgRNA complex. This leads to temporary activity within the cell.</td>
+              <td>Reducing Cas9 exposure time decreases off-target edits and minimises the risk of extended nuclease activity. <a href="references.html#ref9" class="citation">[9]</a></td>
             </tr>
             <tr>
               <td><strong>Chemical Modifications</strong></td>
-              <td></td>
-              <td></td>
+              <td>Chemical modifications of guide RNAs, such as 2′-O-methyl and phosphorothioate linkages, enhance RNA stability, decrease immune activation, and increase specificity.</td>
+              <td>Enhances editing efficiency and minimises unwanted immune responses, which is crucial for clinical application. <a href="references.html#ref9" class="citation">[9]</a></td>
             </tr>
           </tbody>
         </table>
@@ -127,12 +176,16 @@
       <h2>5. Advanced CRISPR Mechanisms</h2>
       
       <h3>Base Editing</h3>
+      <p>Base editors pair catalytically inactive Cas proteins with deaminase enzymes, enabling direct base changes (like C→T or A→G) without causing double-strand breaks.</p>
+      <p>This approach minimises insertions and deletions (indels) and enhances accuracy in therapeutic applications.</p>
       
       <h3>Prime Editing</h3>
+      <p>Prime editing involves a Cas9 nickase combined with reverse transcriptase and a prime editing guide RNA (pegRNA). It allows for precise small insertions, deletions, and substitutions, resulting in fewer off-target effects compared to conventional double-strand break (DSB) editing.</p>
     </section>
 
     <section class="content-section">
       <h2>Summary</h2>
+      <p>CRISPR-Cas9 operates via a sequence of steps: PAM recognition, R-loop formation, conformational activation, and double-strand cleavage. Repair results are influenced by NHEJ or HDR pathways, and optimising efficiency and safety involves reducing off-target effects. Newer tools such as base and prime editing offer advanced solutions for precise therapeutic genome editing.</p>
     </section>
   </main>
 
@@ -148,7 +201,6 @@
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="about.html">About</a></li>
           </ul>
         </div>
       </div>
